@@ -26,102 +26,22 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>ALÇAK GEÇİREN AKTİF FİLTRE</h1>
-					<p><small id="contrib">
-						<a href="">Alişan Erdoğan</a><br>
-						<a href="">Bayram Kaya</a><br>
-						<a href="">Sena Kesme</a>
-						</small></p>
-				</section>
-				<section>
-					<h2>Elektronİk fİltre nedİr</h2>
+					<h1>Graduation Project Demo</h1>
 					<p>
-						Elektronik filtreler farklı frekanslara sahip sinyallerin bazı kısımlarını geçirip, bazı kısımlarını bastıran devrelerdir.Endüktans ve kapasitif elemanlarının frekansa bağlı olarak reaktanslarının değişmesi ile tasarlanır.
+						<small>Created by <a href="">Bayram KAYA</a></small>
 					</p>
 				</section>
 				<section>
-					<h2>aktİf fİltre nedİr?</h2>
-					<p>Aktif filtreler, aktif bir devre elemanı (opamp, transistör vb.) kullanılarak elde edilen filtrelerdir.</p>
+					<h2>Easy to use</h2>
+					<p><small><p>For better experience please use fullscreen mode (F11)</p></small></p>
 				</section>
-				<section>
-					<h2>Aktİf Vs Pasİf Fİltre</h2>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th>Aktif filtre</th>
-								<th>Pasif filtre</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Kazanç</td>
-								<td>A&ge;0</td>
-								<td>A<1</td>
-							</tr>
-							<tr>
-								<td rowspan="2">Komponentler</td>
-								<td colspan="2">Direnç,Kondansatör</td>
-							</tr>
-							<tr>
-								<td>Op-amp</td>
-								<td>Bobin</td>
-							</tr>
-							<tr>
-								<td>Kullanım aralıkları</td>
-								<td><100 KHz</td>
-								<td>>100 KHz</td>
-							</tr>
-						</tbody>
-					</table>
+				<section data-background-video="./vid/projectdemo_edit_0.webm">
 				</section>
-				<section data-background="./img/gain1stord.jpeg"></section>
-				<section data-background="./img/nogain1stord.jpeg"></section>
-				<section >
-					<h2>Cut-Off Frekansı Hesabı</h2>
-					<img class="stretch" style="border:0px solid #666;" src="./img/lowPassGeneral.png">
+				<section><h2>Real-time order tracking</h2></section>
+				<section data-background-video="./vid/ordertracking.webm">
 				</section>
-				<section>
-					<img class="stretch" style="border:0px solid #666;" src="./img/componenetcalc2.png">
-				</section>
-				<section data-background="./img/1stordcircuit.jpeg" data-transition="none" data-background-transition="none">
-					<pre style=" margin-left: 75%;width: 40%;"><code style="word-wrap: break-word;overflow-y: hidden;">Vin 0 1 ac 1
-R3 1 2 1k
-R1 3 0 1k
-R2 3 4 9k
-C1 2 0 8n
-X1 2 3 4 opamp
-.subckt opamp 10 11 13
-Rin 10 11 5e7
-Ro 12 13 40
-Eav 12 0 10 11 100
-.ends
-.ac dec 10 1k 2e6
-.end</code></pre>
-				</section>
-				<section data-background="./img/OneStageGraph.jpeg"></section>
-				
-				<section data-background="./img/2ordercircuit.jpeg" data-transition="none" data-background-transition="none">
-					<pre style=" margin-left: 85%;width: 40%;"><code style="word-wrap: break-word;overflow-y: hidden;">Vin 0 1 ac 1
-R1 1 2 1k
-R2 2 4 1k
-C1 2 4 8n
-X1 0 2 4 opamp
-R3 4 5 1k
-X2 0 5 6 opamp
-R4 5 6 1k
-C2 5 6 8n
-.subckt opamp 10 11 13
-Rin 10 11 5e7
-Ro 12 13 40
-Eav 12 0 10 11 100
-.ends
-.ac dec 10 1k 2e5
-.end</code></pre>
-					</section>
-				<section data-background="./img/2stage2.png"></section>
-				<section>
-					<h1>TEŞEKKÜRLER</h1>
+				<section><h2>User friendly interface</h2></section>
+				<section data-background-video="./vid/userfrendlyprodprofile.webm">
 				</section>
 			</div>
 		</div>
